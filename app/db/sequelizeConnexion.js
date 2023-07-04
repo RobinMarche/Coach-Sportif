@@ -8,9 +8,12 @@ const pool = new Pool({
 
 const Sequelize = require('sequelize');
 
-
 function getConnexion() {
+<<<<<<< HEAD
     return new Sequelize(pool, {
+=======
+    return new Sequelize("postgres://default:qyTt0YxZO7Sc@ep-wispy-waterfall-805358-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb", {
+>>>>>>> 78c12ff9fa2822bca042f314df1ba3ef9229f906
         dialect: process.env.DIALECT,
         define: {
             underscored: true,
