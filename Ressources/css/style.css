@@ -30,7 +30,7 @@
 }
 
 .mainpage_image{
-    background-image: url(../img/piste.jpg);
+    background-image: url(https://images.pexels.com/photos/3756042/pexels-photo-3756042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     height: 50vh;
     background-position: center;
     background-size: cover;
