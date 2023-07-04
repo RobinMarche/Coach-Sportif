@@ -2,7 +2,7 @@ const { Programme } = require('../models/Programme')
 
 const mainController = {
     homePage(req,res) {
-        res.send('home')
+        res.render('home')
     },
 
     coachPage(req,res) {
