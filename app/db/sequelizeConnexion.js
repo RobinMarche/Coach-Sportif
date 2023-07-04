@@ -10,7 +10,7 @@ const Sequelize = require('sequelize');
 
 function getConnexion() {
     return new Sequelize(process.env.PG_URL + "?sslmode=require", {
-        dialect: process.env.DIALECT,
+        dialect: require('pg'),
         define: {
             underscored: true,
             createdAt: 'created_at',
