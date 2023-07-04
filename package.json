@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "description": "Site Internet coach sportif Franck Marche",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "node index.js"
   },
   "keywords": [
     "\"athletisme\"",
