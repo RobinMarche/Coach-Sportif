@@ -1,15 +1,4 @@
-require('dotenv').config();
-
 const Sequelize = require('sequelize');
-
-import pg from 'pg';
-
-const { Pool } = pg;
-
-const pool = new Pool({
-  connectionString: process.env.POSTGRES_URL + "?sslmode=require",
-})
-
 
 function getConnexion() {
     return new Sequelize("postgres://default:qyTt0YxZO7Sc@ep-wispy-waterfall-805358-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb", {
