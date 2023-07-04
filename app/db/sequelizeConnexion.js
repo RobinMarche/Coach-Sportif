@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 
 function getConnexion() {
     return new Sequelize(process.env.PG_URL, {
-        dialect: postgres,
+        dialect: process.env.DIALECT,
         define: {
             underscored: true,
             createdAt: 'created_at',
