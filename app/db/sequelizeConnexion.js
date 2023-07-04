@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 
 
 function getConnexion() {
-    return new Sequelize(process.env.PG_URL, {
+    return new Sequelize("postgres://default:qyTt0YxZO7Sc@ep-wispy-waterfall-805358-pooler.eu-central-1.postgres.vercel-storage.com:5432/verceldb", {
         dialect: process.env.DIALECT,
         define: {
             underscored: true,
