@@ -1,15 +1,15 @@
-import pg from 'pg';
+// import pg from 'pg';
 
-const { Pool } = pg;
+// const { Pool } = pg;
 
-const pool = new Pool({
-  connectionString: process.env.PG_URL + "?sslmode=require",
-})
+// const pool = new Pool({
+//   connectionString: process.env.PG_URL + "?sslmode=require",
+// })
 
 const Sequelize = require('sequelize');
 
 function getConnexion() {
-    return new Sequelize(pool, {
+    return new Sequelize(process.env.PG_URL + "?sslmode=require", {
         dialect: process.env.DIALECT,
         define: {
             underscored: true,
