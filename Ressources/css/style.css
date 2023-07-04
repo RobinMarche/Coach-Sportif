@@ -1,0 +1,515 @@
+.mainpage_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 80px;
+    border-bottom: 1px solid black;
+}
+
+.mainpage_logo img{
+    width: 180px;
+}
+
+.mainpage_nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainpage_nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+}
+
+.mainpage_nav a:hover{
+    color: burlywood;
+    border-bottom: 1px solid burlywood;
+}
+
+.mainpage_image{
+    background-image: url(../img/piste.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    margin: 0 80px 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Indie Flower', cursive;
+    text-transform: uppercase;
+}
+
+.mainpage_image h2{
+    margin: 50px 50px 0 50px;
+    font-size: 0.5em;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 3px 3px 2px black;
+
+}
+
+/******************* PRESENTATION ***************/
+.mainpage_presentation{
+    margin: 50px 80px;
+    background: linear-gradient(to bottom, #27484f, white);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 50px;
+}
+
+.presentation_article-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms;
+}
+
+.presentation_article-card img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+}
+
+.presentation_main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.presentation_article-card{
+    margin: 50px 100px;
+    width: 35%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.presentation_card-link{
+    position: relative;
+    overflow: hidden;
+}
+
+.presentation_card-text{
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+    background-color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 8px;
+}
+
+
+.presentation_header{
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.presentation_header h1, .distinction_header h1{
+    font-size: 3em;
+    font-family: 'Indie Flower', cursive;
+    text-transform: uppercase;
+    margin: 80px 0;
+}
+
+.presentation_header h2{
+    font-size: 1.2em;
+    margin: 0 10% 80px 10%;
+    line-height: 1.5;
+}
+
+/**************** CONTACTS ***************/
+
+.mainpage_contact{
+    background-color: burlywood;
+    padding: 40px 80px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 100px;
+}
+
+.mainpage_contact-header{
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.mainpage_contact-main{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 40px;
+    align-items: center;
+}
+
+.mainpage_contact-description{
+    font-size: 2.2em;
+    word-spacing: 10px;
+}
+
+.mainpage_contact-button a{
+    text-decoration: none;
+    color: burlywood;
+    font-size: 1.3em;
+}
+
+.mainpage_contact-button{
+    background-color: black;
+    padding: 10px 40px;
+}
+
+/***************** ATOUTS ****************/
+
+
+.distinction_header{
+    text-align: center;
+    color: black;
+}
+
+
+.mainpage_distinction{
+    margin: 0px 80px 80px 80px;
+}
+
+.disctinction_main-container img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.disctinction_main-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.distinction_article-card{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.trait{
+    height: 1px;
+    background-color: black;
+    width: 60%;
+    box-shadow: 1px 1px 1px burlywood;
+}
+
+.disctinction_card-title{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+    margin: 20px 0;
+    color: burlywood;
+}
+
+.disctinction_card-text{
+    font-size: 1.1em;
+    margin: 30px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/********** FOOTER *********/
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/*******************************************************
+******************************************************
+*********************************************************
+*********************************************************/
+
+
+
+
+/************* PAGE COACH *****************************/
+
+.coach_page-citation{
+    background-image: url(../img/saut_perche.JPG);
+    height: 80vh;
+    margin: 0 80px 80px 80px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coach_page-citation p {
+    font-size: 3em;
+    margin: 0 20%;
+    color: #fff;
+    text-shadow: 5px 0px 0px black;
+    font-family: 'Oswald';
+    line-height: 1.4;
+}
+
+
+
+/******** PARCOURS *********/
+
+.coach_page-parcours{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px 80px 50px 80px;
+    background-image: url(../img/wallpapper.jpg);
+    background-position: bottom;
+    background-size: cover;
+
+
+}
+
+.parcours-text{
+    color: black;
+    width: 50vw;
+    padding: 40px 50px;
+    background-color: rgb(250, 235, 215, 0.7);
+    margin: 10px 50px;
+}
+
+.parcours-text h1{
+    font-size: 3em;
+    font-family: 'Oswald';
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.parcours-text p{
+    padding-top: 30px;
+    font-size: 1.1em;
+    font-family: 'Oswald';
+    line-height: 2;
+}
+
+.coach_page-image-parcours img{
+    width: 30vw;
+    border: 15px solid rgb(250, 235, 215, 0.7);
+}
+
+.coach_page-image-parcours{
+    width: 50vw;
+    padding: 40px
+}
+
+
+/*******************************************************
+******************************************************
+*********************************************************
+*********************************************************/
+
+
+
+/************** CONTACTS *******************/
+
+.contact_page-title{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/run.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+    height: 100%;
+    background: url(../img/run.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.right{
+    padding: 25px 40px;
+}
+
+.right h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.right h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px ;
+    background-color: #fb911f;
+}
+
+.field{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(230,230,230,0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+
+.field:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30,85,250,0.47)
+}
+
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #fb911f;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+@media screen and (max-width:880px){
+    .contact-box{
+        grid-template-columns: 1fr;
+    }
+
+    .left{
+        height: 200px;
+    }
+}
+
+
+/************* PROGRAMMES ***********/
+
+.programs-main{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+    /* text-transform: uppercase; */
+    font-family: 'Indie Flower', cursive;
+}
+
+.programs-main-container{
+    margin-bottom: 40px;
+}
+
+.programs-main-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.programs-main-container a:hover{
+    border-bottom: 2px solid black;
+}
+
+.programmes-image{
+    background-image: url(../img/programmes.jpg);
+    margin: 0 80px;
+    padding: 100px 0;
+    background-position: top;
+    background-size: cover;
+    text-shadow: 2px 1px 1px white;
+}
+
+
+/****** PAGE POUR UN PROGRAMME ******/
+
+.main-program{
+    margin: 50px 80px;
+}
+
+.main-program-image{
+    max-width: 600px;
+}
+
+.main-program-image img{
+    width: 100%;
+}
+
+.main-program-description{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.programme-description-link{
+    font: 1.5em;
+    line-height: 2;
+    margin-left: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programme-description-link a{
+    text-decoration: none;
+    margin-top: 50px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 1.4em;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
