@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Site Internet coach sportif Franck Marche",
   "main": "index.js",
-  "type": "module"
+  "type": "module",
   "engines": {
     "node": "18.x"
   },
