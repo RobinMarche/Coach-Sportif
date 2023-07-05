@@ -8,6 +8,8 @@ app.set('views', __dirname + '/app/views');
 
 app.use(express.static(__dirname + '/Ressources'))
 
+app.use(express.urlencoded({ extended : false }));
+
 const router = require('./app/router')
 
 

@@ -24,9 +24,3 @@ function listenOnCloseMenuButton() {
 
 listenOnCloseMenuButton()
 
-
-function sendContactToEmail() {
-    const form = document.getElementById('contact_form');
-
-    form.action = "mailto:robin.marche@gmail.com?subject=" + document.getElementById('first-name').value + document.getElementById('last-name').value + document.getElementById('email').value + document.getElementById('phone-number').value + document.getElementById('message').value
-}

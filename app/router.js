@@ -8,6 +8,7 @@ router.get('/coach', mainController.coachPage)
 router.get('/contacts', mainController.contactPage)
 router.get('/programs', mainController.programsPage)
 router.get('/programs/:id', mainController.programChosen)
+router.post('/contacts', mainController.createMessage)
 
 
 

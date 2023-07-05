@@ -1,4 +1,5 @@
 const { Programme } = require('../models/Programme')
+const { User } = require('../models/User')
 
 const mainController = {
     homePage(req,res) {
@@ -30,8 +31,19 @@ const mainController = {
         } catch (error) {
             res.render(error)
         }
-    }
+    },
 
+    async createMessage(req,res) {
+        const { first_name, last_name, email, phone_number, message } = req.body
+
+        if(!first_name || !last_name || !email || !phone_number || !message){
+            return res.render('contacts-tailwind', { error : "Veuillez remplir tous les champs"})
+        }
+
+        await User.create({ first_name, last_name, email, phone_number, message })
+
+        res.render('home-tailwind')
+    }
     
 }
 
