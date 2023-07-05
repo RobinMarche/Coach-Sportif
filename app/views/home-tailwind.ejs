@@ -1,0 +1,366 @@
+<%- include ('partials/header-tailwind') %>
+
+    <div class="bg-[url('/img/filigrane.jpg')] bg-center bg-cover">
+        <header class="absolute inset-x-0 top-0 z-50">
+            <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="/" class="-m-1.5 p-1.5">
+                        <h1 class="text-2xl font-bold">Franck MARCHE</h1>
+                    </a>
+                </div>
+                <div class="flex lg:hidden" id="open-menu-button">
+                    <button type="button"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Accueil</a>
+                    <a href="/coach" class="text-sm font-semibold leading-6 text-gray-900">Qui suis-je ?</a>
+                    <a href="/programs" class="text-sm font-semibold leading-6 text-gray-900">Programmes</a>
+                    <a href="/contacts" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="hidden" role="dialog" aria-modal="true" id="menu-button">
+                <div class="fixed inset-0 z-50"></div>
+                <div
+                    class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img class="h-8 w-auto"
+                                src="/img/z.png" alt="">
+                        </a>
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" id="close-button">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="/"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Accueil</a>
+                                <a href="/coach"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Qui suis-je ?</a>
+                                <a href="/programs"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Programmes</a>
+                                <a href="/contacts"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Gardez la forme avec votre coach sportif</h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">Vous envisagez de mettre un projet sportif en place ? Ne cherchez pas plus loin, vous êtes au bon endroit !</p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6">
+                        <a href="/contacts"
+                            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Contactez-nous</a>
+                        <a href="/programs" class="text-white text-sm font-semibold leading-6 text-gray-900">En Savoir +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                aria-hidden="true">
+                <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+        <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+        <div class="mx-auto max-w-2xl lg:max-w-4xl">
+          <figure class="mt-10">
+            <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+              <p>“Pourquoi faire du sport et de l'entretien physique toute sa vie ? Les activités sportives englobent les disciplines pratiquées en club ou en association et qui impliquent des entraînements réguliers menés à un rythme soutenu, avec éventuellement l'objectif de réaliser des performances. Comme chaque candidat est unique, de par son passé sportif, de sa condition actuelle et de ses objectifs, je vous communiquerais un programme individuel, le plus adapté à vos envies”</p>
+            </blockquote>
+            <figcaption class="mt-10">
+              <img class="mx-auto h-10 w-10 rounded-full" src="/img/Franck_Marche.jpg" alt="">
+              <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                <div class="font-semibold text-gray-900">Franck Marche</div>
+                <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                  <circle cx="1" cy="1" r="1" />
+                </svg>
+                <div class="text-gray-600">Coach Sportif</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+    </section>
+
+
+    <section class="programs">
+    
+        <div class="py-20">
+            <div class="container mx-auto px-6 text-center md:px-12">
+                <div class="mb-16">
+                    <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+                        Découvrez nos programmes
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-8/12">
+                        Que ce soit un projet scolaire, personnel ou bien associatif, Franck saura vous aiguiller et vous préparer le programme le plus adapté à vos objectifs.
+                    </p>
+                </div>
+                <div class="grid gap-28 py-20 md:grid-cols-3 md:gap-12">
+                    <div class="group space-y-8 border-t-4 border-gray-100 dark:border-gray-800 mb-20">
+                        <div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+                            <img class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                                src="https://images.pexels.com/photos/3076509/pexels-photo-3076509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="woman" loading="lazy" width="640" height="805" />
+                        </div>
+                        <div class="space-y-4 text-center">
+                            <div>
+                                <h4 class="text-2xl text-gray-700 dark:text-white">Domicile</h4>
+                            </div>
+                            <a href="/programs/1" class="mx-auto block w-max text-primary">Voir Programme</a>
+                        </div>
+                    </div>
+    
+                    <div class="group space-y-8 border-t-4 border-gray-100 dark:border-gray-800 mb-20">
+                        <div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+                            <img class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                                src="https://images.pexels.com/photos/2524739/pexels-photo-2524739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="woman" loading="lazy" width="1000" height="667" />
+                        </div>
+                        <div class="space-y-4 text-center">
+                            <div>
+                                <h4 class="text-2xl text-gray-700 dark:text-white">Renforcement</h4>
+                            </div>
+                            <a href="/programs/2" class="mx-auto block w-max text-primary">Voir Programme</a>
+                        </div>
+                    </div>
+    
+                    <div class="group space-y-8 border-t-4 border-gray-100 dark:border-gray-800 mb-20">
+                        <div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+                            <img class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                                src="https://images.pexels.com/photos/601177/pexels-photo-601177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="man" loading="lazy" width="1000" height="667" />
+                        </div>
+                        <div class="space-y-4 text-center">
+                            <div>
+                                <h4 class="text-2xl text-gray-700 dark:text-white">Exterieur</h4>
+                            </div>
+                            <a href="/programs/3" class="mx-auto block w-max text-primary">Voir Programme</a>
+                        </div>
+                    </div>
+
+                    <div class="group space-y-8 border-t-4 border-gray-100 dark:border-gray-800 mb-20">
+                        <div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+                            <img class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                                src="https://images.pexels.com/photos/3768593/pexels-photo-3768593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="woman" loading="lazy" width="640" height="805" />
+                        </div>
+                        <div class="space-y-4 text-center">
+                            <div>
+                                <h4 class="text-2xl text-gray-700 dark:text-white">Entreprise</h4>
+                            </div>
+                            <a href="/programs/4" class="mx-auto block w-max text-primary">Voir Programme</a>
+                        </div>
+                    </div>
+
+                    <div class="group space-y-8 border-t-4 border-gray-100 dark:border-gray-800 mb-20">
+                        <div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+                            <img class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                                src="https://images.pexels.com/photos/8813526/pexels-photo-8813526.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="woman" loading="lazy" width="640" height="805" />
+                        </div>
+                        <div class="space-y-4 text-center">
+                            <div>
+                                <h4 class="text-2xl text-gray-700 dark:text-white">Scolaire</h4>
+                            </div>
+                            <a href="/programs/5" class="mx-auto block w-max text-primary">Voir Programme</a>
+                        </div>
+                    </div>
+
+                    <div class="group space-y-8 border-t-4 border-gray-100 dark:border-gray-800 mb-20">
+                        <div class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
+                            <img class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                                src="https://images.pexels.com/photos/5067733/pexels-photo-5067733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="woman" loading="lazy" width="640" height="805" />
+                        </div>
+                        <div class="space-y-4 text-center">
+                            <div>
+                                <h4 class="text-2xl text-gray-700 dark:text-white">Sénior</h4>
+                            </div>
+                            <a href="/programs/6" class="mx-auto block w-max text-primary">Voir Programme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    </section>
+
+    <section class="about-us">
+        <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+                alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+            <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+                aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+                aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+                    style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+                </div>
+            </div>
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                    <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">De par sa formation et son expérience, Franck saura vous proposer un programme sportif adapté et personnalisé en fonction de vos capacités, disponibilités et objectifs.</p>
+                </div>
+                <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                    <div
+                        class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                        <p>Diplomé</p>
+                        <p>Experimenté</p>
+                        <p>Exclusif</p>
+                        <a href="/contacts">Contactez-nous <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+    </section>
+
+    <section class="atouts">
+        
+        <div class="py-16">
+            <div class="xl:container m-auto px-6 text-gray-500 md:px-12">
+              <div>
+                <h2 class="mt-4 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                    Votre Coach vous propose un service personnalisé<br class="lg:block" hidden />
+                    dont voici les points forts
+                </h2>
+              </div>
+              <div
+                class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4"
+              >
+                <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                  <div class="relative space-y-8 py-12 p-8">
+                    <img
+                      src="/img/agenda.png"
+                      class="w-12"
+                      width="512"
+                      height="512"
+                      alt="burger illustration"
+                    />
+          
+                    <div class="space-y-2">
+                      <h5
+                        class="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary"
+                      >
+                      Disponibilité
+                      </h5>
+                      <p class="text-sm text-gray-600 dark:text-gray-300">
+                        Franck propose ses séances 7j/7 de 7 heures du matin à 20 heures le soir. Vous trouverez donc votre bonheur pour la planification de vos séances de sport.
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                  <div class="relative space-y-8 py-12 p-8">
+                    <img
+                      src="/img/horloge.png"
+                      class="w-12"
+                      width="512"
+                      height="512"
+                      alt="burger illustration"
+                    />
+          
+                    <div class="space-y-2">
+                      <h5
+                        class="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary"
+                      >
+                      Réactivité
+                      </h5>
+                      <p class="text-sm text-gray-600 dark:text-gray-300">
+                        Nous profitons de votre motivation pour faire démarrer au plus vite vos séances. De ce fait notre coach est hyper réactif et vous permet de débuter votre programme en quelques heures.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                  <div class="relative space-y-8 py-12 p-8">
+                    <img
+                      src="/img/diplome.png"
+                      class="w-12"
+                      width="512"
+                      height="512"
+                      alt="burger illustration"
+                    />
+          
+                    <div class="space-y-2">
+                      <h5
+                        class="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary"
+                      >
+                      Professionalisme
+                      </h5>
+                      <p class="text-sm text-gray-600 dark:text-gray-300">
+                        Franck est un coach diplômé d'un brevet d'Etat, il a étudié à l'INSEP (L'Institut national du sport, de l'expertise et de la performance) de 1983 à 1986. il saura vous concocter le programme personnalisé le plus adapté et le plus propice à vous emmener vers vos objectifs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+                >
+                  <div
+                    class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800"
+                  >
+                    <img
+                      src="/img/securite.png"
+                      class="w-12"
+                      width="512"
+                      height="512"
+                      alt="burger illustration"
+                    />
+          
+                    <div class="space-y-2">
+                      <h5
+                        class="text-xl font-medium text-gray-700 dark:text-white transition group-hover:text-primary"
+                      >
+                      Sécurité
+                      </h5>
+                      <p class="text-sm text-gray-600 dark:text-gray-300">
+                        Sécurité des séances avec notre coach diplômé détenteur d'une formation de prévention de secours & sécurité des paiements avec une plateforme sécurisée qui vous permet d'acheter en toute sérénité vos séances.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                                              
+    </section>
+
+<%- include ('partials/footer-tailwind') %>
